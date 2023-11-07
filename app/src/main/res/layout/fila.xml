@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fila"
+    android:layout_height="190dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/borde"
+        android:padding="2dp"
+        android:backgroundTint="#273444"
+
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/borde">
+
+
+            <ImageView
+                android:id="@+id/img_peligrosidad"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lbl_NombreRuta"
+                android:layout_width="150dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Nombre de la Ruta"
+                app:layout_constraintStart_toEndOf="@+id/img_peligrosidad"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_creadorruta" />
+
+            <TextView
+                android:id="@+id/lbl_inicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Latitud"
+                android:textAllCaps="true"
+                android:textColor="#41B74C"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_peligrosidad" />
+
+            <TextView
+                android:id="@+id/lbl_fin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Latitud"
+                android:textAllCaps="true"
+                android:textColor="#F95F62"
+                app:layout_constraintStart_toEndOf="@+id/lbl_inicio"
+                app:layout_constraintTop_toBottomOf="@+id/img_peligrosidad" />
+
+            <TextView
+                android:id="@+id/lbl_creadorruta"
+                android:layout_width="152dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Creador de ruta"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/img_peligrosidad"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnMapa"
+                android:layout_width="57dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="29dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ubi_2" /><![CDATA[
+
+            "
+
+                app:layout_constraintStart_toEndOf="@+id/img_peligrosidad"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        ]]>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarActivity"
+    android:background="@drawable/tree">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="401dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registro"
+        app:srcCompat="@drawable/opps" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/lblRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="REGISTRARSE"
+        android:textColor="#47525E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_regresar" />
+
+    <EditText
+        android:id="@+id/txt_correo"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#1F2D3D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegistrarse" />
+
+    <EditText
+        android:id="@+id/txt_contra_registro"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#1F2D3D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_correo" />
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton_auth_personalizado"
+        android:backgroundTint="#00ACD7"
+        android:fontFamily="@font/roboto"
+        android:text="REGISTRARSE"
+        android:textColor="#DAEDDE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contra_registro" />
+
+    <Button
+        android:id="@+id/btn_registro_facebook"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton_auth_personalizado"
+        android:backgroundTint="#3B5998"
+        android:drawableLeft="@drawable/facebook_ico"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="16dp"
+        android:text="REGISTRARSE CON FACEBOOK"
+        android:textColor="#DAEDDE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/btn_registro_twitter"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/boton_auth_personalizado"
+        android:backgroundTint="#00ACEE"
+        android:fontFamily="@font/roboto"
+        android:drawableLeft="@drawable/twitter_ico"
+        android:paddingLeft="16dp"
+        android:text="REGISTRARSE CON TWITTER"
+        android:textColor="#DAEDDE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registro_facebook" />
+
+    <Button
+        android:id="@+id/btn_registro_google"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/boton_auth_personalizado"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:drawableLeft="@drawable/google_ico"
+        android:paddingLeft="16dp"
+        android:text="REGISTRARSE CON GOOGLE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registro_twitter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

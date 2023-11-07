@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/tree">
+
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="INICIAR SESIÓN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_return" />
+
+    <EditText
+        android:id="@+id/txt_user"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Correo Electrónico"
+        android:inputType="textPersonName"
+        android:textColorHint="#1F2D3D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#1F2D3D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user" />
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton_auth_personalizado"
+        android:backgroundTint="#00ACD7"
+        android:fontFamily="@font/roboto"
+        android:text="INICIAR SESIÓN"
+        android:textColor="#DAEDDE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+
+    <Button
+        android:id="@+id/btn_iniciar_facebook"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton_auth_personalizado"
+        android:backgroundTint="#3B5998"
+        android:drawableLeft="@drawable/facebook_ico"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="16dp"
+        android:text="INICIAR SESIÓN CON FACEBOOK"
+        android:textColor="#DAEDDE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/btn_iniciar_twitter"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/boton_auth_personalizado"
+        android:backgroundTint="#00ACEE"
+        android:fontFamily="@font/roboto"
+        android:drawableLeft="@drawable/twitter_ico"
+        android:paddingLeft="16dp"
+        android:text="INICIAR SESIÓN CON TWITTER"
+        android:textColor="#DAEDDE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar_facebook" />
+
+    <Button
+        android:id="@+id/btn_iniciar_google"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/boton_auth_personalizado"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/google_ico"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="16dp"
+        android:text="INICIAR SESIÓN CON GOOGLE"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar_twitter" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="401dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar"
+        app:srcCompat="@drawable/opps" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
